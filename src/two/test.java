@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
-      double a=Double.parseDouble("11.5");
-        System.out.println(a);
+      String a="asdf.af.dfdf.dfd";
+      String[] b=a.split("\\.");
+      for (String i :b){
+          System.out.println(i);
+      }
+
        }
     }
