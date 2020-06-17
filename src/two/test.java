@@ -2,9 +2,9 @@ package two;
 
 import java.util.Scanner;
 
-public class Double {
+public class test {
     public static void main(String[] args) {
-      int a=Integer.parseInt("123");
+      double a=Double.parseDouble("11.5");
         System.out.println(a);
        }
     }
