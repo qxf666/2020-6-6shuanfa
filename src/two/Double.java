@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Double {
     public static void main(String[] args) {
-        String a="aaaa";
-        System.out.println( a.charAt(3));
-
+        Scanner input=new Scanner(System.in);
+        String s1=input.next();
+        System.out.println(s1);
        }
     }
