@@ -4,22 +4,25 @@ import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
-        System.out.print("Enter a string:");
-        String s=input.nextLine();
-        int count=0;
-        boolean flag=true;
-       for(int i=0,j=s.length()-1;i<s.length()/2;i++,j--){
-           if(s.charAt(i)!=s.charAt(j)){
-               flag=false;
-               break;
-           }
-       }
-       if (flag){
-           System.out.println( "is palindorme");
-       }
-       else
-           System.out.println( "is not a palindorme");
+        int count=1;
+        int number=2;
+        String s="";
+        while(count<=50){
+            boolean isprime=true;
+            for(int divisor=2;divisor<number;divisor++){  //判断是否是素数
+                if(number%divisor==0){
+                    isprime=false;
+                }
+            }
+            if (isprime){
 
+                s+=number+" ";
+               if(count%10==0)
+                   s+="\n";
+                count++;
+            }
+            number++;
+        }
+        System.out.println(s);
     }
 }
