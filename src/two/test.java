@@ -1,15 +1,15 @@
 package two;
 
-import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
+        int a=0;
         int count=1;
         int number=2;
         String s="";
         while(count<=50){
             boolean isprime=true;
-            for(int divisor=2;divisor<number;divisor++){  //判断是否是素数
+            for(int divisor=2;divisor<=number/2;divisor++){  //判断是否是素数
                 if(number%divisor==0){
                     isprime=false;
                 }
