@@ -7,6 +7,10 @@ public class test4 {
         for(int i=0;i<100;i++){
             array[i]=randomCharacter();
         }
+        for(char i:array){
+            System.out.print(i);
+        }
+        System.out.printf("\n\n");
         int count;
         for (int i=0;i<100;i++){
             count=array[i]-'a';
