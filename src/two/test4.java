@@ -10,7 +10,8 @@ public class test4 {
         for(char i:array){
             System.out.print(i);
         }
-        System.out.printf("\n\n");
+        System.out.println();
+        System.out.println();
         int count;
         for (int i=0;i<100;i++){
             count=array[i]-'a';
